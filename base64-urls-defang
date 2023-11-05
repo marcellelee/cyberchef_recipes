@@ -1,0 +1,6 @@
+#Extract base64 encoding from script, decode, defang results
+
+Regular_expression('User defined','[a-zA-Z0-9+/=]{30,}',true,true,false,false,false,false,'List matches')
+From_Base64('A-Za-z0-9+/=',true)
+Extract_URLs(false,false,false)
+Defang_URL(true,true,true,'Valid domains and full URLs')

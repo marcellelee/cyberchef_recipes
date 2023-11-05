@@ -1,0 +1,5 @@
+#Parse a bunch of IP addresses, sort, defang, and count how many
+Split(' ','\\n')
+Sort('Line feed',false,'Alphabetical (case sensitive)')
+Defang_IP_Addresses()
+Count_occurrences({'option':'Regex','string':'(\\d.*)([[].][\\d+])([.\\d.+]{0,3}){0,3}'})

@@ -1,0 +1,5 @@
+#recipe for parsing a QR code, defanging the URL output, and performing an NS lookup.
+Parse_QR_Code(false)
+Defang_URL(true,true,true,'Valid domains and full URLs')
+HTTP_request('GET','https://networkcalc.com/api/dns/lookup/thiscouldbemalicious.xyz','','Cross-Origin Resource Sharing',false)
+

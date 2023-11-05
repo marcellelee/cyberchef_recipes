@@ -1,0 +1,4 @@
+#get your IP address and defang it
+HTTP_request('GET','http://ip-api.com/json','','Cross-Origin Resource Sharing',false)
+Extract_IP_addresses(true,false,false,false,false,false)
+Defang_IP_Addresses()
